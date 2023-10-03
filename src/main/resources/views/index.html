@@ -1,0 +1,715 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Currency Rates {[{.now | formatAsDate}]}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <meta name=”description” content="Finance mobile applications have become an integral part of the modern investment world.
+    They provide a convenient and accessible way to monitor financial markets in real-time, allowing users
+    to track stocks, bonds, funds, and other financial instruments">
+</head>
+
+<body>
+
+<div style="text-align:center">
+    <h1>Currency Rates</h1>
+    <h4>Date: <span th:text="${now}"></span></h4>
+
+    <table class="table">
+        <tr class="table-primary">
+            <td>AED/USD</td>
+            <td th:text="${aed}"></td>
+        </tr>
+        <tr class="table-primary">
+            <td>AFN/USD</td>
+            <td>{[{.afn}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>ALL/USD</td>
+            <td>{[{.all}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>AMD/USD</td>
+            <td>{[{.amd}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>ANG/USD</td>
+            <td>{[{.ang}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>AOA/USD</td>
+            <td>{[{.aoa}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>ARS/USD</td>
+            <td>{[{.ars}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>AUD/USD</td>
+            <td>{[{.aud}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>AWG/USD</td>
+            <td>{[{.awg}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>AZN/USD</td>
+            <td>{[{.azn}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>BAM/USD</td>
+            <td>{[{.bam}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>BBD/USD</td>
+            <td>{[{.bbd}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>BDT/USD</td>
+            <td>{[{.bdt}]}</td>
+        </tr>
+
+        <tr class="table-primary">
+            <td>BGN/USD</td>
+            <td>{[{.bgn}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>BIF/USD</td>
+            <td>{[{.bif}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>BMD/USD</td>
+            <td>{[{.bmd}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>BND/USD</td>
+            <td>{[{.bnd}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>BOB/USD</td>
+            <td>{[{.bob}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>BRL/USD</td>
+            <td>{[{.brl}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>BSD/USD</td>
+            <td>{[{.bsd}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>BTC/USD</td>
+            <td>{[{.btc}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>BTN/USD</td>
+            <td>{[{.btn}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>BWP/USD</td>
+            <td>{[{.bwp}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>BYN/USD</td>
+            <td>{[{.byn}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>BZD/USD</td>
+            <td>{[{.bzd}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>CAD/USD</td>
+            <td>{[{.cad}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>CDF/USD</td>
+            <td>{[{.cdf}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>CHF/USD</td>
+            <td>{[{.chf}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>CLF/USD</td>
+            <td>{[{.clf}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>CLP/USD</td>
+            <td>{[{.clp}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>CNH/USD</td>
+            <td>{[{.cnh}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>CNY/USD</td>
+            <td>{[{.cny}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>COP/USD</td>
+            <td>{[{.cop}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>CRC/USD</td>
+            <td>{[{.crc}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>CUC/USD</td>
+            <td>{[{.cuc}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>CUP/USD</td>
+            <td>{[{.cup}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>CVE/USD</td>
+            <td>{[{.cve}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>CZK/USD</td>
+            <td>{[{.czk}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>DJF/USD</td>
+            <td>{[{.djf}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>DKK/USD</td>
+            <td>{[{.dkk}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>DOP/USD</td>
+            <td>{[{.dop}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>DZD/USD</td>
+            <td>{[{.dzd}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>EGP/USD</td>
+            <td>{[{.egp}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>ERN/USD</td>
+            <td>{[{.ern}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>ETB/USD</td>
+            <td>{[{.etb}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>EUR/USD</td>
+            <td>{[{.eur}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>FJD/USD</td>
+            <td>{[{.fjd}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>FKP/USD</td>
+            <td>{[{.fkp}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>GDP/USD</td>
+            <td>{[{.gbp}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>GEL/USD</td>
+            <td>{[{.gel}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>GGP/USD</td>
+            <td>{[{.ggp}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>GHS/USD</td>
+            <td>{[{.ghs}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>GIP/USD</td>
+            <td>{[{.gip}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>GMD/USD</td>
+            <td>{[{.gmd}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>GNF/USD</td>
+            <td>{[{.gnf}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>GTQ/USD</td>
+            <td>{[{.gtq}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>GYD/USD</td>
+            <td>{[{.gyd}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>HKD/USD</td>
+            <td>{[{.hkd}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>HNL/USD</td>
+            <td>{[{.hnl}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>HRK/USD</td>
+            <td>{[{.hrk}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>HTG/USD</td>
+            <td>{[{.htg}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>HUF/USD</td>
+            <td>{[{.huf}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>IDR/USD</td>
+            <td>{[{.idr}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>ILS/USD</td>
+            <td>{[{.ils}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>IMP/USD</td>
+            <td>{[{.imp}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>INR/USD</td>
+            <td>{[{.inr}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>IQD/USD</td>
+            <td>{[{.iqd}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>IRR/USD</td>
+            <td>{[{.irr}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>ISK/USD</td>
+            <td>{[{.isk}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>JEP/USD</td>
+            <td>{[{.jep}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>JMD/USD</td>
+            <td>{[{.jmd}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>JOD/USD</td>
+            <td>{[{.jod}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>JPY/USD</td>
+            <td>{[{.jpy}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>KES/USD</td>
+            <td>{[{.kes}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>KGS/USD</td>
+            <td>{[{.kgs}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>KHR/USD</td>
+            <td>{[{.khr}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>KMF/USD</td>
+            <td>{[{.kmf}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>KPW/USD</td>
+            <td>{[{.kpw}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>KRW/USD</td>
+            <td>{[{.krw}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>KWD/USD</td>
+            <td>{[{.kwd}]}</td>
+        </tr>
+
+
+        <tr class="table-primary">
+            <td>KYD/USD</td>
+            <td>{[{.kyd}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>KZT/USD</td>
+            <td>{[{.kzt}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>LAK/USD</td>
+            <td>{[{.lak}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>LBP/USD</td>
+            <td>{[{.lbp}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>LKR/USD</td>
+            <td>{[{.lkr}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>LDR/USD</td>
+            <td>{[{.ldr}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>LSL/USD</td>
+            <td>{[{.lsl}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>LYD/USD</td>
+            <td>{[{.lyd}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>MAD/USD</td>
+            <td>{[{.mad}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>MDL/USD</td>
+            <td>{[{.mdl}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>MGA/USD</td>
+            <td>{[{.mga}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>MKD/USD</td>
+            <td>{[{.mkd}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>MMK/USD</td>
+            <td>{[{.mmk}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>MNT/USD</td>
+            <td>{[{.mnt}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>MOP/USD</td>
+            <td>{[{.mop}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>MRU/USD</td>
+            <td>{[{.mru}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>MUR/USD</td>
+            <td>{[{.mur}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>MVR/USD</td>
+            <td>{[{.mvr}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>MWK/USD</td>
+            <td>{[{.mwk}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>MXN/USD</td>
+            <td>{[{.mxn}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>MYR/USD</td>
+            <td>{[{.myr}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>MZN/USD</td>
+            <td>{[{.mzn}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>NAD/USD</td>
+            <td>{[{.nad}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>NGN/USD</td>
+            <td>{[{.ngn}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>NIO/USD</td>
+            <td>{[{.nio}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>NOK/USD</td>
+            <td>{[{.nok}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>NPR/USD</td>
+            <td>{[{.npr}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>NZD/USD</td>
+            <td>{[{.nzd}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>OMR/USD</td>
+            <td>{[{.omr}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>PAB/USD</td>
+            <td>{[{.pab}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>PEN/USD</td>
+            <td>{[{.pen}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>PGK/USD</td>
+            <td>{[{.pgk}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>PHP/USD</td>
+            <td>{[{.php}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>PKR/USD</td>
+            <td>{[{.pkr}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>PLN/USD</td>
+            <td>{[{.pln}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>PYG/USD</td>
+            <td>{[{.pyg}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>QAR/USD</td>
+            <td>{[{.qar}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>RON/USD</td>
+            <td>{[{.ron}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>RSD/USD</td>
+            <td>{[{.rsd}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>RUB/USD</td>
+            <td>{[{.rub}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>RWF/USD</td>
+            <td>{[{.rwf}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>SAR/USD</td>
+            <td>{[{.sar}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>SBD/USD</td>
+            <td>{[{.sbd}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>SCR/USD</td>
+            <td>{[{.scr}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>SDD/USD</td>
+            <td>{[{.sdg}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>SEK/USD</td>
+            <td>{[{.sek}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>SGD/USD</td>
+            <td>{[{.sgd}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>SHP/USD</td>
+            <td>{[{.shp}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>SLL/USD</td>
+            <td>{[{.sll}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>SOS/USD</td>
+            <td>{[{.sos}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>SRD/USD</td>
+            <td>{[{.srd}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>SSP/USD</td>
+            <td>{[{.ssp}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>STD/USD</td>
+            <td>{[{.std}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>STN/USD</td>
+            <td>{[{.stn}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>SVC/USD</td>
+            <td>{[{.svc}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>SYP/USD</td>
+            <td>{[{.syp}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>SZL/USD</td>
+            <td>{[{.szl}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>THB/USD</td>
+            <td>{[{.thb}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>TJS/USD</td>
+            <td>{[{.tjs}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>TMT/USD</td>
+            <td>{[{.tmt}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>TND/USD</td>
+            <td>{[{.tnd}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>TOP/USD</td>
+            <td>{[{.top}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>TRY/USD</td>
+            <td>{[{.try}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>TTD/USD</td>
+            <td>{[{.ttd}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>TWD/USD</td>
+            <td>{[{.twd}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>TZS/USD</td>
+            <td>{[{.tzs}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>UAH/USD</td>
+            <td>{[{.uah}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>UGX/USD</td>
+            <td>{[{.ugx}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>UYU/USD</td>
+            <td>{[{.uyu}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>UZS/USD</td>
+            <td>{[{.uzs}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>VES/USD</td>
+            <td>{[{.ves}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>VND/USD</td>
+            <td>{[{.vnd}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>VYV/USD</td>
+            <td>{[{.vyv}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>WST/USD</td>
+            <td>{[{.wst}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>XAF/USD</td>
+            <td>{[{.xaf}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>XAG/USD</td>
+            <td>{[{.xag}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>XAU/USD</td>
+            <td>{[{.xau}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>XCD/USD</td>
+            <td>{[{.xcd}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>XDR/USD</td>
+            <td>{[{.xdr}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>XOF/USD</td>
+            <td>{[{.xof}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>XPD/USD</td>
+            <td>{[{.xpd}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>XPF/USD</td>
+            <td>{[{.xpf}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>XPT/USD</td>
+            <td>{[{.xpt}]}</td>
+        </tr>
+
+        <tr class="table-primary">
+            <td>YER/USD</td>
+            <td>{[{.yer}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>ZAR/USD</td>
+            <td>{[{.zar}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>ZMW/USD</td>
+            <td>{[{.zmw}]}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>ZWL/USD</td>
+            <td>{[{.zwl}]}</td>
+        </tr>
+
+    </table>
+
+    <p style="font-size: small; color: rgb(176, 174, 174);">Finance mobile applications have become an integral part
+        of the modern
+        investment world.
+        They provide a convenient and accessible way to monitor financial markets in real-time, allowing users
+        to track stocks, bonds, funds, and other financial instruments wherever they are. These applications
+        offer up-to-date information on quotes, charts, news, and analytics, helping investors make informed
+        decisions
+        and even execute trades right from their mobile devices. With these tools, users can manage their
+        portfolios, set alerts, and stay updated on all market changes, always having market data literally at their
+        fingertips.
+    </p>
+
+    <div style="margin-bottom: 30px;">
+        <button type="button" class="btn btn-outline-primary"
+                onclick="location.href = 'https://apps.apple.com/ua/app/monegoo-finance/id6448564268'">AppStore</button>
+        <button type="button" class="btn btn-outline-success" style="margin-left: 3px;"
+                onclick="location.href = 'https://play.google.com/store/apps/details?id=com.monegoo.currency.monegoo_currency'">Google
+            Play</button>
+    </div>
+
+</div>
+</body>
